@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.min.css" type="text/css">
+    <title>Surveys</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="dashboard.html" class="header-logo pull-left">
+            <img src="./img/SS_logo.jpeg" alt="logotype">
+        </a>
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="schedules.html">Schedules</a></li>
+            <li><a href="request_forms.html">Request forms</a></li>
+            <li><a href="surveys.html">Surveys</a></li>
+            <li><a href="#">Users</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="surveys">
+    <div class="container">
+        <div class="page-title">
+            <h1>Surveys</h1>
+        </div>
+        <table class="filter pull-left">
+            <thead>
+            <tr>
+                <th>Filter by date</th>
+                <th>by Type</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td valign="center">
+                    <input type="text" placeholder="1/1/2017-12/31/2017" class="form-control">
+                </td>
+                <td>
+                    <select class="form-control">
+                        <option>All</option>
+                        <option>Internship Survey</option>
+                        <option>Speaker Survey</option>
+                        <option>End of Year Survey</option>
+                    </select>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="new-survey pull-right">
+            <button class="add-survey" id="add-survey">New Survey <i class="fa fa-caret-down"></i></button>
+            <ul class="list-unstyled hidden" id="survey-list">
+                <li>Internship Survey</li>
+                <li>Speaker Survey</li>
+                <li>End of Year Survey</li>
+            </ul>
+        </div>
+        <table class="request-table table-striped">
+            <caption>Your Experience so Far: Internship Survey (1/15/2017)</caption>
+            <thead>
+                <tr>
+                    <th>Date Submitted</th>
+                    <th>Intern Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1/28/2017</td>
+                    <td>Joe Rogan</td>
+                </tr>
+                <tr>
+                    <td>1/31/2017</td>
+                    <td>Margaret Thatcher</td>
+                </tr>
+                <tr>
+                    <td>2/2/2017</td>
+                    <td>Indiana Jones</td>
+                </tr>
+                <tr>
+                    <td>2/6/2018</td>
+                    <td>Frasier Crane</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="request-table table-striped">
+            <caption>Craig Nagasaki: Speaker Survey (1/12/2017)</caption>
+            <thead>
+            <tr>
+                <th>Date Submitted</th>
+                <th>Intern Name</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1/28/2017</td>
+                <td>Joe Rogan</td>
+            </tr>
+            <tr>
+                <td>1/31/2017</td>
+                <td>Margaret Thatcher</td>
+            </tr>
+            <tr>
+                <td>2/2/2017</td>
+                <td>Indiana Jones</td>
+            </tr>
+            <tr>
+                <td>2/6/2018</td>
+                <td>Frasier Crane</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../public/js/index.js"></script>
+<script src="../public/js/survey.js"></script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <!--META-->
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/index.min.css" type="text/css">
+    <title>Request Forms</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <a href="dashboard.html" class="header-logo pull-left">
+            <img src="./img/SS_logo.jpeg" alt="logotype">
+        </a>
+        <ul class="nav navbar-nav pull-right">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="schedules.html">Schedules</a></li>
+            <li><a href="request_forms.html">Request forms</a></li>
+            <li><a href="surveys.html">Surveys</a></li>
+            <li><a href="#">Users</a></li>
+        </ul>
+    </div>
+</header>
+
+
+<div class="request-forms">
+    <div class="container">
+        <div class="page-title">
+            <h1>Request forms</h1>
+        </div>
+        <table class="filter">
+            <thead>
+                <tr>
+                    <th>Filter by date</th>
+                    <th>by Type</th>
+                    <th>by Decision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td valign="center">
+                        <input type="text" placeholder="1/1/2017-12/31/2017" class="form-control">
+                    </td>
+                    <td>
+                        <select class="form-control">
+                            <option>All</option>
+                            <option>Personal Day</option>
+                            <option>Overnight guest</option>
+                            <option>Sick day</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="form-control">
+                            <option>All</option>
+                            <option>Accepted</option>
+                            <option>Rejected</option>
+                            <option>No decision</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="request-table table-striped">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Intern Name</th>
+                    <th>Request type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1/31/2017</td>
+                    <td>Joe Rogan</td>
+                    <td>Personal Day Request</td>
+                    <td>
+                        <button class="btn reject"></button>
+                        <button class="btn accept"></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1/31/2017</td>
+                    <td>Margaret Thatcher</td>
+                    <td>Overnight Guest Request</td>
+                    <td><p class="approved">Approved</p></td>
+                </tr>
+                <tr>
+                    <td>2/2/2017</td>
+                    <td>Indiana Jones</td>
+                    <td>Sick Day Request</td>
+                    <td><p class="rejected">Rejected</p></td>
+                </tr>
+                <tr>
+                    <td>2/6/2018</td>
+                    <td>Frasier Crane</td>
+                    <td>Overnight Guest Request</td>
+                    <td>
+                        <button class="btn reject"></button>
+                        <button class="btn accept"></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">99</a></li>
+        </ul>
+    </div>
+</div>
+<script src="../public/js/index.js"></script>
+</body>
+</html>
